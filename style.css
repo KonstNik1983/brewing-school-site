@@ -492,6 +492,7 @@ footer {
 @media (max-width: 440px) {
    .first-screen-beer-image {
       bottom: 50px;
+      width: 70vw;
    }
 
    .brewing-beer-image {
@@ -592,6 +593,11 @@ footer {
 @media (max-width: 370px) {
    .header-logo {
       width: 200px;
+   }
+   
+   .first-screen-beer-image {
+      bottom: 45px;
+      width: 60vw;
    }
 }
 
