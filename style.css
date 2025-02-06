@@ -492,10 +492,10 @@ footer {
 @media (max-width: 440px) {
 
      .first-screen-info {
-      top: 15%;
+      top: 10%;
    }
    .first-screen-beer-image {
-      bottom: 50px;
+      bottom: 60px;
       width: 70vw;
    }
 
