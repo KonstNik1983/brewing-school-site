@@ -532,7 +532,7 @@ footer {
 
    .subtitle {
       margin-bottom: 20px;
-      max-width: 55vw;
+      max-width: 65vw;
    }
 
    .subtitle p {
@@ -554,6 +554,7 @@ footer {
 
    .swiper-slide {
       font-size: 14px;
+      padding-inline: 55px;
    }
 
    .button.transparent {
