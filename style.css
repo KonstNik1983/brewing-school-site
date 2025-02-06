@@ -216,8 +216,8 @@ button:hover {
 
 .first-screen-beer-image {
    position: absolute;
-   width: 100%;
-   max-width: 40vw;
+   width: 40vw;
+   max-width: 600px;
    height: auto;
    bottom: 0;
    right: 0;
@@ -377,11 +377,6 @@ footer {
    .button {
       height: 28px;
       padding-inline: 12px;
-   }
-
-   .first-screen-beer-image {
-      bottom: 100px;
-      max-width: 60vw;
    }
 
    .first-screen-title {
