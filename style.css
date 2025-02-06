@@ -494,6 +494,10 @@ footer {
      .first-screen-info {
       top: 10%;
    }
+   .first-screen-title {
+        font-size: 14px;
+    } 
+   
    .first-screen-beer-image {
       bottom: 60px;
       width: 70vw;
@@ -604,6 +608,9 @@ footer {
       bottom: 45px;
       width: 60vw;
    }
+   .first-screen-title {
+        font-size: 13px;
+    }
 }
 
 
