@@ -439,6 +439,10 @@ footer {
       margin-bottom: 50px;
   }
 
+   .main-description {
+   margin-bottom: 50px;
+  }
+
   .main-description-carousel {
    flex-direction: column;
    justify-content: center;
