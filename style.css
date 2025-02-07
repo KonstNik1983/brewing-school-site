@@ -286,7 +286,7 @@ button:hover {
  }
  .swiper-slide {
    line-height: 1.2;
-   font-size: 20px;
+   font-size: clamp(14px, 1.33vw , 26px);
    display: flex;
    flex-direction: column;
    justify-content: center;
