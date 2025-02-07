@@ -233,7 +233,7 @@ button:hover {
    margin-bottom: 100px;
    font-size: 1.7vw;
    line-height: 1.2;
-   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+   max-width: 85%;
    margin-inline: auto;
 }
 
