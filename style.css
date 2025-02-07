@@ -385,7 +385,9 @@ footer {
       padding-inline: 12px;
    }
 
-   
+    .main-description {
+      max-width: 90%;
+   }
 
    .first-screen-title {
       font-size: 3vw;
