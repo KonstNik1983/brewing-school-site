@@ -204,7 +204,7 @@ button:hover {
 .first-screen-info {
    position: absolute;
    width: 100%;
-   max-width: 40vw;
+   height: auto;
    top: 30%;
    left: 10%;
 }
@@ -216,8 +216,8 @@ button:hover {
 
 .first-screen-beer-image {
    position: absolute;
-   width: 40vw;
    max-width: 600px;
+   width: 40vw;
    height: auto;
    bottom: 0;
    right: 0;
@@ -225,7 +225,7 @@ button:hover {
 
 
 
-.image-text-content {
+.main-description {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -233,7 +233,7 @@ button:hover {
    margin-bottom: 100px;
    font-size: 1.7vw;
    line-height: 1.2;
-   max-width: 85%;
+   max-width: 80%;
    margin-inline: auto;
 }
 
@@ -250,8 +250,9 @@ button:hover {
    justify-content: center;
    align-items: center;
    background: linear-gradient(to left, #FEC38E, #9A2F00);
-   padding-left: 100px;
+   padding-left: 20px;
    padding-top: 50px;
+   gap: 60px;
 }
 
 .main-description-carousel h2 {
@@ -282,20 +283,24 @@ button:hover {
 }
 
 .swiper{
+   margin-left: 0;
+   margin-right: 0;
    max-width: 44vw;
    height: 100%;
    margin-bottom: 30px;
  }
+
  .swiper-slide {
    line-height: 1.2;
    font-size: clamp(14px, 1.33vw , 26px);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
    padding-inline: 70px;
    padding-bottom: 50px;
  }
+
+ .swiper-slide h3 {
+   text-align: center;
+ }
+ 
  .swiper-slide img{
    width: 30%;
    object-fit: cover;
@@ -381,6 +386,8 @@ footer {
       padding-inline: 12px;
    }
 
+   
+
    .first-screen-title {
       font-size: 3vw;
    }
@@ -393,7 +400,7 @@ footer {
       max-width: 45vw;
    }
 
-   .image-text-content {
+   .imag-text-content {
       padding-inline: 40px;
    }
 
@@ -437,6 +444,7 @@ footer {
    align-items: center;
    padding-left: 0;
    max-width: 100%;
+   gap: 0;
 }
 
 .subtitle {
@@ -493,16 +501,17 @@ footer {
 
 @media (max-width: 440px) {
 
-     .first-screen-info {
+   .first-screen-title {
+      font-size: 14px;
+  }
+
+   .first-screen-info {
       top: 15%;
    }
-   .first-screen-title {
-        font-size: 14px;
-    } 
-   
+
    .first-screen-beer-image {
-      bottom: 60px;
-      width: 70vw;
+      bottom: 50px;
+      width: 80vw;
    }
 
    .brewing-beer-image {
@@ -513,18 +522,18 @@ footer {
       padding: 20px;
    }
 
-   .image-text-content {
+   .main-description {
       flex-direction: column-reverse;
       margin-bottom: 25px;
       font-size: 2.15vw;
    }
 
-   .image-text-content p {
+   .main-description p {
       font-size: 3.5vw;
-      margin-bottom: 25px;
+      margin-bottom: 0;
    }
 
-   .image-text-content {
+   .main-description {
       padding-inline: 20px;
   }
 
@@ -546,7 +555,7 @@ footer {
    }
 
    .subtitle p {
-      font-size: 16px;
+      font-size: 3vw;
    }
 
    .main-description-carousel h2 {
@@ -563,7 +572,7 @@ footer {
    }
 
    .swiper-slide {
-      font-size: 14px;
+      font-size: 16px;
       padding-inline: 55px;
    }
 
@@ -584,7 +593,7 @@ footer {
 
 @media (max-width: 395px) {
    
-   .image-text-content p {
+   .main-description p {
       font-size: 3.8vw;
    }   
 
@@ -599,20 +608,24 @@ footer {
    .swiper-slide {
       padding-bottom: 40px;
    }
+
 }
 
 @media (max-width: 370px) {
+   
    .header-logo {
       width: 200px;
    }
-   
+
    .first-screen-beer-image {
       bottom: 45px;
       width: 60vw;
    }
+
    .first-screen-title {
-        font-size: 13px;
-    }
+      font-size: 13px;
+  }
+
 }
 
 
