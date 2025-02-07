@@ -247,6 +247,8 @@ button:hover {
 
 .main-description-carousel {
    display: flex;
+   justify-content: center;
+   align-items: center;
    background: linear-gradient(to left, #FEC38E, #9A2F00);
    padding-left: 100px;
    padding-top: 50px;
