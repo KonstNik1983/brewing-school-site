@@ -16,37 +16,54 @@
 </head>
 
 <body>
-   <header class="header">
-      <a class="header-logo" href="/">
+   <header class="header" id="main-page">
+      <a class="header-logo" href="index.html">
          <img src="./img/Logo-1.svg" class="header-logo-image" alt="Beer School Logo">
       </a>
       <nav class="header-menu">
          <ul class="header-menu-list">
             <li class="header-menu-item">
-               <a href="/" class="header-menu-link is-current">Главная</a>
+               <a href="index.html" class="header-menu-link is-current">Главная</a>
             </li>
             <li class="header-menu-item">
-               <a href="/" class="header-menu-link">Статьи</a>
+               <a href="blog.html" class="header-menu-link">Статьи</a>
             </li>
             <li class="header-menu-item">
-               <a href="/" class="header-menu-link">Рецепты</a>
+               <a href="recipes.html" class="header-menu-link">Рецепты</a>
             </li>
             <li class="header-menu-item">
-               <a href="/" class="header-menu-link">O школе</a>
+               <a href="about.html" class="header-menu-link">O школе</a>
             </li>
          </ul>
       </nav>
       <div class="header-actions">
-         <button class="header-book-button button" type="button" title="Контакты">
+         <button class="header-book-button button btn--show-modal-window" type="button" title="Контакты">
             Контакты
          </button>
       </div>
+      <div class="modal-window hidden">
+         <button class="btn--close-modal-window close-modal">&times;</button>
+
+         <form class="modal__form">
+            <h2><span class="highlight-section">
+                  Контакты
+               </span>
+            </h2>
+            <p>Телефон для связи с нашим менеджером:
+               +7 (961) 306-20-90<br />
+               Звонки приниаются в рабочее время по МСК:<br />
+               Пн-Пт: с 09:00 до 20:00
+            </p>
+         </form>
+         <button class="btn close-modal">Закрыть &rarr;</button>
+      </div>
+      <div class="overlay hidden"></div>
    </header>
 
    <main class="main-content">
       <section class="first-screen">
          <div class="first-screen-info">
-            <h1 class="first-screen-title">Добро пожаловать на сайт <br />
+            <h1 class="first-screen-title"><span class="highlight-section">Добро пожаловать на сайт</span><br />
                первой онлайн школы <br />
                домашнего пивоварения
             </h1>
@@ -54,29 +71,33 @@
          </div>
          <img class="first-screen-beer-image" src="./img/banner-img.png" alt="Bottle of beer">
       </section>
-      <section class="main-description">
+      <section class="main-description" id="section2">
          <img class="brewing-beer-image" src="./img/home.jpg" alt="Brewing proses">
-         <p id="section2">
-            <strong>Домашнее пивоварение</strong> – это увлекательное хобби, которое сочетает в себе творчество,
+         <p>
+            <strong>Домашнее пивоварение</strong> – это увлекательное хобби, которое сочетает в
+            себе творчество,
             науку и удовольствие
             от результата. <br /><br />
             Сегодня мы расскажем, почему стоит попробовать варить пиво дома и какие преимущества вы
             получите от этого замечательного процесса.
          </p>
       </section>
-      <section class="main-description-carousel">
+      <section class="main-description-carousel section">
          <div class="subtitle">
-            <p><b>Готовы сделать первый шаг?</b><br /> Читайте о <a href="/" style="color: lightskyblue"><b> нашей
+            <p><b>Готовы сделать первый шаг?</b><br /> Читайте о <a href="about.html"><b> нашей
                      школе </b>
                </a> более подробно.<br />
                Присоединяйтесь к миру домашних пивоваров! 🍺</p>
-            <h2>Почему стоит варить пиво дома: <br />
-               5 причин начать уже сегодня</h2>
+
+            <h2>Почему стоит варить пиво дома:<br /><br />
+               <span class="highlight-section">5 причин начать уже сегодня</span>
+            </h2>
+            </span>
          </div>
          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
-                  <h3>1. Контроль над качеством и вкусом</h3>
+                  <h3><span class="highlight-section">1. Контроль над качеством и вкусом</span></h3>
                   <p>Когда вы варите пиво дома, вы полностью управляете ингредиентами. Отборное зерно, свежий хмель,
                      чистая
                      вода и качественные дрожжи – все это в ваших руках. Вы можете экспериментировать с рецептами и
@@ -87,7 +108,7 @@
                      кофе? Выбор за вами. Домашнее пивоварение позволяет вам забыть о компромиссах.</p>
                </div>
                <div class="swiper-slide">
-                  <h3>2. Экономия средств</h3>
+                  <h3><span class="highlight-section">2. Экономия средств</span></h3>
                   <p>На первый взгляд кажется, что варить пиво дома дорого из-за оборудования и ингредиентов. Однако
                      это
                      инвестиция, которая окупается. Один раз купив оборудование, вы будете тратить только на сырье, а
@@ -97,7 +118,7 @@
                      упаковку и рекламу.</p>
                </div>
                <div class="swiper-slide">
-                  <h3>3. Удовольствие от процесса</h3>
+                  <h3><span class="highlight-section">3. Удовольствие от процесса</span></h3>
                   <p>Варка пива – это одновременно наука и искусство. Вы узнаете основы химии, биологии и физики, что
                      делает
                      процесс не только увлекательным, но и познавательным.</p>
@@ -108,7 +129,7 @@
                      результатом своей работы.</p>
                </div>
                <div class="swiper-slide">
-                  <h3>4. Особая гордость за результат</h3>
+                  <h3><span class="highlight-section">4. Особая гордость за результат</span></h3>
                   <p>Представьте, что вы предлагаете друзьям или близким бутылку пива, сделанного вашими руками. Они
                      восхищаются вкусом, а вы с гордостью рассказываете о процессе. Домашнее пиво – это больше, чем
                      напиток;
@@ -118,7 +139,7 @@
                      например, ягоды, специи или даже мед.</p>
                </div>
                <div class="swiper-slide">
-                  <h3>5. Сообщество пивоваров</h3>
+                  <h3><span class="highlight-section">5. Сообщество пивоваров</span></h3>
                   <p>Домашние пивовары – это дружелюбное и увлеченное сообщество. Общение с такими же энтузиастами
                      поможет
                      вам
@@ -132,7 +153,7 @@
                      вдохновляться.</p>
                </div>
                <div class="swiper-slide">
-                  <h3>Заключение</h3>
+                  <h3><span class="highlight-section">Заключение</span></h3>
                   <p><strong>Домашнее пивоварение</strong> – это не просто способ приготовить напиток. Это
                      путешествие в
                      мир творчества и
@@ -145,6 +166,124 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
+         </div>
+      </section>
+      <section class="about section">
+         <header class="header" id="header">
+            <a class="header-logo" href="/">
+               <img src="./img/Logo-1.svg" class="header-logo-image" alt="Beer School Logo">
+            </a>
+            <nav class="header-menu">
+               <ul class="header-menu-list">
+                  <li class="header-menu-item">
+                     <a href="#main-page" class="header-menu-link is-current" id="home">Главная</a>
+                  </li>
+                  <li class="header-menu-item">
+                     <a href="blog.html" class="header-menu-link">Статьи</a>
+                  </li>
+                  <li class="header-menu-item">
+                     <a href="recipes.html" class="header-menu-link">Рецепты</a>
+                  </li>
+                  <li class="header-menu-item">
+                     <a href="about.html" class="header-menu-link">O школе</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header-actions">
+               <button class="header-book-button button btn--show-modal-window" type="button" title="Контакты">
+                  Контакты
+               </button>
+            </div>
+            <div class="modal-window hidden">
+               <button class="btn--close-modal-window close-modal">&times;</button>
+
+               <form class="modal__form">
+                  <h2><span class="highlight-section">
+                        Контакты
+                     </span>
+                  </h2>
+                  <p>Телефон для связи с нашим менеджером:
+                     +7 (961) 306-20-90<br />
+                     Звонки приниаются в рабочее время по МСК:<br />
+                     Пн-Пт: с 09:00 до 20:00
+                  </p>
+               </form>
+               <button class="btn close-modal">Закрыть &rarr;</button>
+            </div>
+            <div class="overlay hidden"></div>
+         </header>
+         <div class="section__title">
+            <h2 class="section__header"><span class="highlight-section">Услуги нашей школы</span>
+            </h2>
+         </div>
+
+         <div class="operations">
+            <div class="operations__tab-container">
+               <button class="btn-op operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                  Полное обучение
+               </button>
+               <button class="btn-op operations__tab operations__tab--2" data-tab="2">
+                  Онлайн-консультации
+               </button>
+               <button class="btn-op operations__tab operations__tab--3" data-tab="3">
+                  Составление рецептов
+               </button>
+            </div>
+            <div class="operations__content operations__content--1 operations__content--active">
+               <h3 class="operations__header">
+                  ✅ Полное обучение с нуля (онлайн)
+               </h3>
+               <p>Идеально для тех, кто хочет освоить домашнее пивоварение с азов.</p>
+               <ul>
+                  <li>Разбор оборудования и подбор оптимального варианта под ваши цели.</li>
+                  <li>Изучение технологии пивоварения: от основ до создания рецептов.</li>
+                  <li>Обучение самостоятельной разработке рецептов.</li>
+                  <li>Индивидуальный рецепт + сопровождение одной варки с корректировкой результата.</li>
+               </ul>
+               <p class="price">
+                  <span class="highlight-section">Стоимость: 20 000 рублей</span>
+               </p>
+
+            </div>
+
+            <div class="operations__content operations__content--2">
+               <h3 class="operations__header">
+                  ✅ Онлайн-консультация по сложным вопросам
+               </h3>
+               <p>Если у вас уже есть оборудование, но возникают трудности, мы готовы помочь.</p>
+               <ul>
+                  <li>Разбор конкретной ситуации.</li>
+                  <li>Решение вопросов по варке, брожению и дегустации.</li>
+               </ul>
+               <p>
+                  <span class="highlight-section">Стоимость: индивидуально (зависит от сложности)</span>
+               </p>
+            </div>
+            <div class="operations__content operations__content--3">
+               <h3 class="operations__header">
+                  ✅ Составление индивидуальных рецептов
+               </h3>
+               <ul>
+                  <li>
+                     Вы получите рецепт, полностью адаптированный под ваши запросы
+                  </li>
+                  <li>Также можно добавить сопровождение на всех этапах.</li>
+               </ul>
+               <p>
+                  <span class="highlight-section">Составление рецепта: 3 000 рублей</span>
+               <p>
+               <p>
+                  <span class="highlight-section">
+                     Рецепт плюс сопровождение: 6 000 рублей
+                  </span>
+               </p>
+            </div>
+         </div>
+         <div class="section-footer">
+            <p>
+               Готовы начать? <strong class="btn--show-modal-window">Свяжитесь с нами</strong> и сделайте первый шаг к
+               созданию идеального пива!
+            </p>
          </div>
       </section>
    </main>
