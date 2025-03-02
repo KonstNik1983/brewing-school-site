@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Brewing School</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header class="header">
+      <a class="header-logo" href="/">
+         <img src="./img/Logo-1.svg" class="header-logo-image" alt="Beer School Logo">
+      </a>
+      <nav class="header-menu">
+         <ul class="header-menu-list">
+            <li class="header-menu-item">
+               <a href="index.html" class="header-menu-link is-current">Главная</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="blog.html" class="header-menu-link">Статьи</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="recipes.html" class="header-menu-link">Рецепты</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="about.html" class="header-menu-link">O школе</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="header-actions">
+         <button class="header-book-button button btn--show-modal-window" type="button" title="Контакты">
+            Контакты
+         </button>
+      </div>
+      <div class="modal-window hidden">
+         <button class="btn--close-modal-window close-modal">&times;</button>
+
+         <form class="modal__form">
+            <h2><span class="highlight-section">
+                  Контакты
+               </span>
+            </h2>
+            <p>Телефон для связи с нашим менеджером:
+               +7 (961) 306-20-90<br />
+               Звонки приниаются в рабочее время по МСК:<br />
+               Пн-Пт: с 09:00 до 20:00
+            </p>
+         </form>
+         <button class="btn close-modal">Закрыть &rarr;</button>
+      </div>
+      <div class="overlay hidden"></div>
+   </header>
+   <main class="blog-recipes">
+      <h1><span class="highlight-section">Блог домашнего пивовара</span></h1>
+      <section class="grid-container">
+         <article class="grid-item">
+            <a href="/">
+               <img src="img/equipment.jpg" class="card-img-top" alt="Превью изображение">
+               <h3>Выбор оборудования</h3>
+               <p>Статья о выборе оброрудования</p>
+            </a>
+         </article>
+         <article class="grid-item">
+            <a href="/">
+               <img src="img/molt.jpg" class="card-img-top" alt="Превью изображение">
+               <h3>Солод в пивоварении</h3>
+               <p>Расскажем о солоде в пивоварении</p>
+            </a>
+         </article>
+         <article class="grid-item">
+            <a href="/">
+               <img src="img/hop.jpg" class="card-img-top" alt="Превью изображение">
+               <h3>Хмель в пивоварении</h3>
+               <p>Все о хмеле для домашнего пивовара</p>
+            </a>
+         </article>
+         <article class="grid-item">
+            <a href="/">
+               <img src="img/yeast.jpg" class="card-img-top" alt="Превью изображение">
+               <h3>дрожжи в пивоварении</h3>
+               <p>Разберем вопрос с пивными дрожжами</p>
+            </a>
+         </article>
+      </section>
+   </main>
+   <footer>
+      <div class="footer-content">
+         <p>&copy; <span> 2025 </span> The Rocket Beer</p>
+         <div class="social-icons">
+            <a href="https://wa.me/+79613062090" target="_blank" aria-label="whatsapp"><i
+                  class="bi bi-whatsapp"></i></a>
+            <a href="https://t.me/home_brewing_school" target="_blank" aria-label="Telegram"><i
+                  class="bi bi-telegram"></i></a>
+         </div>
+      </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+
+</html>
